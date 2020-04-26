@@ -1,0 +1,2 @@
+1. Estructuras repetitivas (while, for)
+2. Arreglos, vectores y cadenas(strings)
