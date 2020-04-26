@@ -6,5 +6,5 @@
       5.1. Implementation - calentamiento: https://codeforces.com/problemset/problem/977/A
       5.2. Introducción a la complejidad: https://codeforces.com/contest/900/problem/A (N^2 TLE, pasar a lineal)
       5.3. Introducción a la complejidad + Strings: https://codeforces.com/problemset/problem/894/A 
-            (Dar sol en N^3, explicar sol lineal sin codearla)
+            (Dar sol en N^3, explicar sol cuadrática y lineal sin codearla)
       5.4. Numeros grandes (Long Long/String): https://codeforces.com/problemset/problem/110/A
