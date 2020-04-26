@@ -7,11 +7,11 @@ using namespace std;
 
 	Analisis: Ningun punto tiene X = 0
 	
-	Revisa si existe un punto tal que, si lo eliminas, todos los demás puntos
-	estarán ubicados en un solo lado del eje Y.
+	Revisa si existe un punto tal que, si lo eliminas, todos los demÃ¡s puntos
+	estarÃ¡n ubicados en un solo lado del eje Y.
 	
 	Analisis: 
-		Si quito un punto, todos los demás deben tener:
+		Si quito un punto, todos los demÃ¡s deben tener:
 			X positivo o todos X negativo
 		El Y no importa, no tengo ninguna restriccion con el
 		
@@ -43,9 +43,9 @@ int N;
 	N*N = N^2 
 	
 	N = 10^5 * 10^5  = 10^10
-	Aprox. operaciones por segundo: 10^8
+	Las computadoras realizan aprox. operaciones por segundo: 10^8
 	
-	Nuestra solucion directa funcionaría si tuvieramos hasta 10^4
+	Nuestra solucion directa funcionarÃ­a si tuvieramos hasta 10^4
 	10^4 * 10^4 = 10^8
 	
 	O(N^2) -> tenemos que reducirlo O(N)	
