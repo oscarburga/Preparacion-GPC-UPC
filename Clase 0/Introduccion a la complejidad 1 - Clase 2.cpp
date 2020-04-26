@@ -6,11 +6,11 @@ using namespace std;
 	
 		Analisis: Ningun punto tiene coordenada X = 0
 	
-	Revisa si existe un punto tal que, si lo eliminas, todos los demás puntos
-	estarán ubicados en un solo lado del eje Y.
+	Revisa si existe un punto tal que, si lo eliminas, todos los demÃ¡s puntos
+	estarÃ¡n ubicados en un solo lado del eje Y.
 	
 	Analisis: 
-		Si quito un punto, todos los demás deben tener:
+		Si quito un punto, todos los demÃ¡s deben tener:
 			X positivo o todos X negativo
 		El Y no importa, no tengo ninguna restriccion con el
 		
@@ -40,7 +40,7 @@ int main(){
 	
 	/*
 		Reviso los N puntos -> O(N) 	
-		Para cada punto que reviso, voy a revisar N puntos más
+		Para cada punto que reviso, voy a revisar N puntos mÃ¡s
 	
 		N operaciones generales
 			por cada operacion general, hago N operaciones
@@ -50,13 +50,13 @@ int main(){
 		Las computadoras de los jueces realizan aprox 10^8 operaciones
 			por segundo
 		
-		Nuestra solucion cuadrática funcionaria hasta aprox N = 10^4
+		Nuestra solucion cuadrÃ¡tica funcionaria hasta aprox N = 10^4
 			10^4 * 10^4 = 10^8
 		
 		Reducir O(N^2) -> O(N)
 		
 		Para que exista respuesta:
-			En primer lugar, debe haber máximo 1 positivo y el resto
+			En primer lugar, debe haber mÃ¡ximo 1 positivo y el resto
 			todos con X negativo, o viceversa.
 	*/
 }
