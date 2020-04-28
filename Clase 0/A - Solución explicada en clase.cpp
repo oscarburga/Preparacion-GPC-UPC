@@ -1,23 +1,23 @@
 #include <bits/stdc++.h>
-//bits/stdc++ es una librería que incluye a todas las librerías de C++
+//bits/stdc++ es una librerÃ­a que incluye a todas las librerÃ­as de C++
 //solo funciona con el compilador G++ y GCC, no funciona en Visual
 using namespace std;
 
 
 
 /*
-	Tanya esta aprendiendo a restar uno a los números enteros que tengan 
-	2 dígitos o más, pero ha aprendido algo raro. Para restar, ella hace
+	Tanya esta aprendiendo a restar uno a los nÃºmeros enteros que tengan 
+	2 dÃ­gitos o mÃ¡s, pero ha aprendido algo raro. Para restar, ella hace
 	lo siguiente:
 	
-		*Si el último digito del número es diferente de cero, ella le resta 1
-		 al número
-		*Si el último digito del número es cero, ella divide el numero entre 10
+		*Si el Ãºltimo digito del nÃºmero es diferente de cero, ella le resta 1
+		 al nÃºmero
+		*Si el Ãºltimo digito del nÃºmero es cero, ella divide el numero entre 10
 		
-	Te dan dos números N y K, Tanya va a realizar la operación al 
-	número N, K veces.
+	Te dan dos nÃºmeros N y K, Tanya va a realizar la operaciÃ³n al 
+	nÃºmero N, K veces.
 	
-	Imprime el número N después de las K operaciones.
+	Imprime el nÃºmero N despuÃ©s de las K operaciones.
 
 */
 
@@ -28,7 +28,7 @@ int main(){
 	int n, k;
 	cin >> n >> k;
 	//scanf("%d %d", &n, &k);
-	//en el futuro, algunos problemas podrían botarles Tiempo de Limite
+	//en el futuro, algunos problemas podrÃ­an botarles Tiempo de Limite
 	//Excedido usando cin, en esos casos deben probar con scanf
 	
 	/*
@@ -44,7 +44,7 @@ int main(){
 	*/
 
 	for(int operaciones = 0; operaciones < k; operaciones=operaciones+1){
-		//El for lo único que hace es contar la cantidad de operaciones
+		//El for lo Ãºnico que hace es contar la cantidad de operaciones
 		// que realizamos
 		if (n%10 > 0) 
 			n = n-1;
