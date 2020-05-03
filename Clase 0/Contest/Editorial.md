@@ -1,6 +1,6 @@
-## Primer Contest Semanal
+# Primer Contest Semanal
 
-A - In Search of an Easy Problem:
+# A - In Search of an Easy Problem:
 
 Para este problema nos piden que si al menos hay una persona 
 de las N que dice que el problema es dificil debes 
@@ -8,7 +8,7 @@ imprimir HARD, de otra manera EASY. Para eso basta leer
 las N opiniones (1 o 0) y si alguna es 1 se imprime HARD.
 Complejidad O(N).
 
-B - Helping grandpa Laino:
+# B - Helping grandpa Laino:
 
 Para este problema tenian que tratar de leer bien el enunciado
 ya que nos dicen que hay una vocal que el abuelo no puede 
@@ -18,7 +18,7 @@ es la 'i'. Entonces para cada palabra solo tenemos que
 decir si contiene 'i' o no. Complejidad O(|S|) para cada 
 caso.
 
-C - Pizza, Pizza, Pizza!!!:
+# C - Pizza, Pizza, Pizza!!!:
 
 Tenemos que cortar la pizza en n + 1 piezas, vemos que
 si (n + 1) es par podemos solo hacer (n + 1)/2 cortes
@@ -29,7 +29,7 @@ n = 0, aqui deberiamos hacer 0 cortes pero algunos
 respondian que necesitabamos 1 corte lo cual estaba mal.
 
 
-D - Even Subset Sum Problem:
+# D - Even Subset Sum Problem:
 
 Sabemos que dos numeros con la misma paridad dan un numero par:
 - IMPAR + IMPAR = PAR porque IMPAR%2 = 1 y si sumamos dos
@@ -45,7 +45,7 @@ es par tenemos respuesta y si a0 y a1 no fueran pares
 ambas serian impares y tendriamos respuesta tambien.
 Complejidad O(TxN)
 
-E - MaratonIME educates:
+# E - MaratonIME educates:
 
 Probablemente lo que uno puede pensar es simular el problema
 ya que tenemos un cierto numero de personas en cada carro
@@ -65,5 +65,3 @@ arriba. Para esto pueden usar la funcion ceil() en C++
 o si queremos trabajar solo con enteros solo tomamos
 Suma/5 parte entera y verificamos su Suma%5 != 0, si si lo es
 necesitaremos al menos un carro mas.
-
- 
