@@ -61,7 +61,6 @@ Ejemplo Input 1:
 Tenemos Suma = 3 + 4 + 5 personas = 12 personas
 Carros = 12/5 = 2.4 Carros, pero no podemos tener un 
 numero decimal de carros por lo que siempre redondeamos 
-arriba. Para esto pueden usar la funcion ceil() en C++
-o si queremos trabajar solo con enteros solo tomamos
-Suma/5 parte entera y verificamos su Suma%5 != 0, si si lo es
+arriba. Para esto trabajaremos solo con enteros (para no preocuparnos por
+errores de precision por decimales). Basta tomar la parte entera de Suma/5 y verificamos si  Suma%5 != 0, si si lo es
 necesitaremos al menos un carro mas.
