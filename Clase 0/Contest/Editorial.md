@@ -1,13 +1,15 @@
-Primer Contest Semanal
+##Primer Contest Semanal
 
-A - In Search of an Easy Problem
+A - In Search of an Easy Problem:
+
 Para este problema nos piden que si al menos hay una persona 
 de las N que dice que el problema es dificil debes 
 imprimir HARD, de otra manera EASY. Para eso basta leer
 las N opiniones (1 o 0) y si alguna es 1 se imprime HARD.
 Complejidad O(N).
 
-B - Helping grandpa Laino
+B - Helping grandpa Laino:
+
 Para este problema tenian que tratar de leer bien el enunciado
 ya que nos dicen que hay una vocal que el abuelo no puede 
 pronunciar y nos dan las palabras con las que no tiene problema.
@@ -16,7 +18,8 @@ es la 'i'. Entonces para cada palabra solo tenemos que
 decir si contiene 'i' o no. Complejidad O(|S|) para cada 
 caso.
 
-C - Pizza, Pizza, Pizza!!!
+C - Pizza, Pizza, Pizza!!!:
+
 Tenemos que cortar la pizza en n + 1 piezas, vemos que
 si (n + 1) es par podemos solo hacer (n + 1)/2 cortes
 y cumpliria con lo que pide el problema. De otra manera
@@ -26,7 +29,8 @@ n = 0, aqui deberiamos hacer 0 cortes pero algunos
 respondian que necesitabamos 1 corte lo cual estaba mal.
 
 
-D - Even Subset Sum Problem
+D - Even Subset Sum Problem:
+
 Sabemos que dos numeros con la misma paridad dan un numero par:
 - IMPAR + IMPAR = PAR porque IMPAR%2 = 1 y si sumamos dos
 numeros con resto 1 al final tendremos un numero con resto 0
@@ -41,7 +45,8 @@ es par tenemos respuesta y si a0 y a1 no fueran pares
 ambas serian impares y tendriamos respuesta tambien.
 Complejidad O(TxN)
 
-E - MaratonIME educates
+E - MaratonIME educates:
+
 Probablemente lo que uno puede pensar es simular el problema
 ya que tenemos un cierto numero de personas en cada carro
 y queremos que todos tengan cinco personas como maximo. 
