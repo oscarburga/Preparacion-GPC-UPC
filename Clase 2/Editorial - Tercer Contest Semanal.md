@@ -4,19 +4,19 @@ Cada vez que tenemos un caracter que sea de apertura ( , { o [ , lo metemos a nu
 Cuando tenemos uno de cierre, claramente necesitamos que el caracter que esta al comienzo de la pila sea del mismo tipo.
 Si es } el tope de la pila debe ser {, y asi para los otros dos tipos.
 Si no fuera asi o si la pila estuviera vacia, sabemos que no estara balanceado autmaticamente y podemos solo parar de recorrer el string.
-Si si es pareja solo lo removemos de la pila.
+Si sí es pareja solo lo removemos de la pila.
 
 Sin embargo solo ver eso no es suficiente ya que siguiendo ese algoritmo el string: {}(()){{{{{ daria que es valido, pero no lo es porque tenemos 
 caracteres de abertura que no tienen pareja. Entonces tambien tenemos que verificar si la pila de caracteres de abertura esta vacio,
 ya que eso significaria que todos los de abertura econtraron pareja.
 
-## C - Gracias Racso por pasar el problema a Polygon (?
+## C - Gracias Racso por pasar el problema a Polygon
 Claramente si volteamos el string en cada consulta de tipo 1 o intentamos agregar un caracter al comienzo tendriamos de veredicto
 time limit, ya que voltear un string toma O(n) y agregar un caracter al cominezo es la misma complejidad de crear un nuevo string lo cual tambien
 seria O(n). Entonces nos damos cuenta que realmente lo unico que queremos saber para cada query es en que estado esta mi string, si
 esta volteado o no. Podemos usar un deque para eso. Al comienzo metemos todos los caracteres a la estrucutra de datos.
-Luego un booleano que nos diga si es que el string esta volteado o no. Asi al querer agregar un caracter, si mi string esta volteado solo signidica que mis extremos cambian.
-Si tengo en mi deque [a,b,c,d,e] mi inicio seria antes de la a y el final luego de la e, pero si esta volteado a seria el final y e
+Luego un booleano que nos diga si es que el string esta volteado o no. Asi al querer agregar un caracter, si mi string esta volteado solo significa que mis extremos cambian.
+Si tengo en mi deque [a,b,c,d,e] mi inicio seria antes de la 'a' y el final luego de la 'e', pero si esta volteado 'a' seria el final y 'e'
 seria el comienzo. Entonces sabemos donde tenemos que insertar.
 
 ## D - Table Tennis 
