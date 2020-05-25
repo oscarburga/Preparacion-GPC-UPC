@@ -1,3 +1,19 @@
+## A - Coins Distribution
+
+Como se nos pide que cada grupo no tenga 2 monedas iguales, la primera observación que debemos hacer es que si tenemos una
+moneda con K ocurrencias, igual solo puede haber como máximo una en cada grupo, por lo que deberíamos simplemente tratar de poner las K monedas en los primeros K grupos. De igual forma, como sabemos que en total solo pueden haber 10^6 monedas, y solo asignaremos cada moneda una vez, si podemos asignar cada moneda a un grupo en O(1), tendremos una solución con complejidad total en O(N). Ahora, la parte interesante es: ¿Cuál es la manera óptima de asignar monedas a los grupos?
+
+Como se nos pide maximizar la cantidad de grupos de monedas completos, deberíamos asignar las monedas de las cuales tenemos una mayor cantidad de repetidos primero siguiendo un mismo orden en los grupos (asignar desde la izquierda hacia la derecha por ejemplo). De este modo, garantizamos que un grupo solo se llenará únicamente si todos los grupos de su izquierda ya estan llenos.
+
+Para simular este procedimiento, podemos crear inicialmente un deque o un arreglo de 10^6 pares {cantidad, moneda} para mantener la cuenta de cuántas monedas de cada tipo tenemos. Luego ordenamos este arreglo/deque de pares por orden de ocurrencias. Si no sabían hacer comparadores especiales, podían simplemente hacer un sort() por defecto (para ordenar de menor a mayor) y luego llamar a la función reverse() para obtener el arreglo de mayor a menor. Adicionalmente, necesitaremos un deque de vectores para representar nuestros grupos. 
+
+Ahora que tenemos las monedas ordenadas por cantidad, simplemente nos queda simular el procedimiento:
+- Tomo el primer par que no he procesado aún y VERIFICO QUE TENGA CANTIDAD MAYOR A CERO. Si tiene cantidad = 0, salimos del ciclo e imprimimos la respuesta.
+- Digamos que el primer par tenía K como valor de ocurrencias. Entonces itero sobre los primeros K vectores en mi deque y les hago push_back(moneda) a cada uno. Si uno de los vectores llega a tener el tamaño límite (H), entonces debo imprimir su contenido y eliminarlo de mi deque (pop_front()). Esta es la principal razón por la que llenamos de izquierda a derecha, ya que así garantizamos que si un vector se llena, siempre será el primero en mi deque, y puedo simplemente poppearlo.
+- Durante el procedimiento anterior, debería mantener un booleano que me diga si ya he poppeado algun vector o aún no, de tal forma que cuando me quede sin monedas, puedo verificar si nunca llene ningún grupo, y en este caso imprimo "impossible".
+
+
+
 ## B - Balanced Brackets
 Podemos solo simular como es que se va armando el string de izquierda a derecha.
 Cada vez que tenemos un caracter que sea de apertura ( , { o [ , lo metemos a nuestra pila.
