@@ -1,6 +1,6 @@
 ## B - Balanced Brackets
 Podemos solo simular como es que se va armando el string de izquierda a derecha.
-Cada vez que tenemos un caracter que sea de abertura ( , { o [ , lo metemos a nuestra pila.
+Cada vez que tenemos un caracter que sea de apertura ( , { o [ , lo metemos a nuestra pila.
 Cuando tenemos uno de cierre, claramente necesitamos que el caracter que esta al comienzo de la pila sea del mismo tipo.
 Si es } el tope de la pila debe ser {, y asi para los otros dos tipos.
 Si no fuera asi o si la pila estuviera vacia, sabemos que no estara balanceado autmaticamente y podemos solo parar de recorrer el string.
