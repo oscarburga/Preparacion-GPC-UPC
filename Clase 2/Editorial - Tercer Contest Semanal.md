@@ -12,6 +12,8 @@ Ahora que tenemos las monedas ordenadas por cantidad, simplemente nos queda simu
 - Digamos que el primer par tenía K como valor de ocurrencias. Entonces itero sobre los primeros K vectores en mi deque y les hago push_back(moneda) a cada uno. Si uno de los vectores llega a tener el tamaño límite (H), entonces debo imprimir su contenido y eliminarlo de mi deque (pop_front()). Esta es la principal razón por la que llenamos de izquierda a derecha y por orden de ocurrencias, ya que así garantizamos que si un vector se llena, siempre será el primero en mi deque, y puedo simplemente eliminarlo.
 - Durante el procedimiento anterior, debería mantener un booleano que me diga si ya he poppeado algun vector o aún no, de tal forma que cuando me quede sin monedas, puedo verificar si llegué a llenar algún grupo o no, y en caso de que no, imprimo "impossible".
 
+Finalmente, tenemos O(NlogN) para realizar el ordenamiento de los pares y O(N) para simular el procedimiento de asignación a los grupos, por lo que tenemos como complejidad final O(NlogN), lo cual es suficiente para pasar el limite de tiempo sin problemas.
+
 ## B - Balanced Brackets
 Podemos solo simular como es que se va armando el string de izquierda a derecha.
 Cada vez que tenemos un caracter que sea de apertura ( , { o [ , lo metemos a nuestra pila.
@@ -66,4 +68,5 @@ deben ser borradas, entonces elimino el tope de mi pila y no agrego el caracter.
 Luego de esto ya tendrmos en la pila cuales son los que quedaron leugo del proceso pero estara al reves, asi que podemos solo 
 tener un string donde pondremos los elementos que quedaron en la pila y imprimirlo al reves.
 
-
+## J - Problema extra: Red and Green Apples:
+Tenemos que pensar en cómo podemos establecer una manera sencilla de
