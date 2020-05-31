@@ -24,7 +24,7 @@ int main(){
 	map<int,int> cuenta_pares, cuenta_impares;
 	
 	for(int i = 0; i<n; i++)
-		if (i%2) cuenta_pares[a[i]]++;
+		if (i%2 == 0) cuenta_pares[a[i]]++;
 		else cuenta_impares[a[i]]++;
 
 	//Obtengo los 2 numeros con mayores ocurrencias en posiciones pares
